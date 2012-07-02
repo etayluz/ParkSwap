@@ -7,14 +7,15 @@
 //
 
 #import "ParkSwapAppDelegate.h"
+#import "MainViewController.h"
 
 @implementation ParkSwapAppDelegate
 
-@synthesize window = _window;
+@synthesize window, mainViewController;
 
 - (void)dealloc
 {
-    [_window release];
+    [self.window release];
     [super dealloc];
 }
 
@@ -22,8 +23,12 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    //self.window.backgroundColor = [UIColor whiteColor];
+    self.mainViewController = [[[MainViewController alloc] init] autorelease];
+    self.window.rootViewController = self.mainViewController;
+    
     [self.window makeKeyAndVisible];
+
     return YES;
 }
 

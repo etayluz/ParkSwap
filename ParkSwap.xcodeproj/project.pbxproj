@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		372FB35C15A13A17004B9C89 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372FB35B15A13A17004B9C89 /* MainViewController.m */; };
+		372FB38D15A14097004B9C89 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372FB38C15A14097004B9C89 /* MapKit.framework */; };
 		3765F2BD15A130C100E26785 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3765F2BC15A130C100E26785 /* UIKit.framework */; };
 		3765F2BF15A130C100E26785 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3765F2BE15A130C100E26785 /* Foundation.framework */; };
 		3765F2C115A130C100E26785 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3765F2C015A130C100E26785 /* CoreGraphics.framework */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		372FB35A15A13A17004B9C89 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ViewControllers/MainViewController.h; sourceTree = "<group>"; };
+		372FB35B15A13A17004B9C89 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ViewControllers/MainViewController.m; sourceTree = "<group>"; };
+		372FB38C15A14097004B9C89 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3765F2B815A130C100E26785 /* ParkSwap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkSwap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3765F2BC15A130C100E26785 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3765F2BE15A130C100E26785 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				372FB38D15A14097004B9C89 /* MapKit.framework in Frameworks */,
 				3765F2BD15A130C100E26785 /* UIKit.framework in Frameworks */,
 				3765F2BF15A130C100E26785 /* Foundation.framework in Frameworks */,
 				3765F2C115A130C100E26785 /* CoreGraphics.framework in Frameworks */,
@@ -42,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		372FB35915A135B3004B9C89 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				372FB35A15A13A17004B9C89 /* MainViewController.h */,
+				372FB35B15A13A17004B9C89 /* MainViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		3765F2AD15A130C100E26785 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +77,7 @@
 		3765F2BB15A130C100E26785 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				372FB38C15A14097004B9C89 /* MapKit.framework */,
 				3765F2BC15A130C100E26785 /* UIKit.framework */,
 				3765F2BE15A130C100E26785 /* Foundation.framework */,
 				3765F2C015A130C100E26785 /* CoreGraphics.framework */,
@@ -74,6 +90,7 @@
 			children = (
 				3765F2CB15A130C100E26785 /* ParkSwapAppDelegate.h */,
 				3765F2CC15A130C100E26785 /* ParkSwapAppDelegate.m */,
+				372FB35915A135B3004B9C89 /* View Controllers */,
 				3765F2C315A130C100E26785 /* Supporting Files */,
 			);
 			path = ParkSwap;
@@ -154,6 +171,7 @@
 			files = (
 				3765F2C915A130C100E26785 /* main.m in Sources */,
 				3765F2CD15A130C100E26785 /* ParkSwapAppDelegate.m in Sources */,
+				372FB35C15A13A17004B9C89 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +275,7 @@
 				3765F2D215A130C100E26785 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
