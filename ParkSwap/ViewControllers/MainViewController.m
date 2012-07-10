@@ -7,8 +7,9 @@
 //
 
 #import "MainViewController.h"
+#import "MapViewController.h"
 
-@interface MainViewController ()
+@interface MainViewController () 
 
 @end
 
@@ -32,10 +33,18 @@
     
     /* Sell Button */
     self.sellButton = [UIButton buttonWithType: UIButtonTypeRoundedRect];
-    [self.sellButton addTarget:self action:@selector(sellButtonTap) forControlEvents:UIControlEventTouchDown];
+    [self.sellButton addTarget:self action:@selector(buyButtonTap) forControlEvents:UIControlEventTouchDown];
     [self.sellButton setTitle: @"Sell Spot" forState: UIControlStateNormal];
     self.sellButton.frame = CGRectMake(60, 300, 200, 30);
     [self.view addSubview:self.sellButton];
+}
+
+- (void)buyButtonTap
+{
+    [super viewDidUnload];
+    
+    MapViewController *mapViewController = [[MapViewController alloc] init];
+    [self presentModalViewController:mapViewController animated:YES];
 }
 
 - (void)viewDidUnload
