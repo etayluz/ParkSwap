@@ -7,13 +7,13 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "ParkSwap/ViewControllers/MapViewController.m"
-         timestampString = "363597116.288591"
+         filePath = "ParkSwap/ViewControllers/MainViewController.m"
+         timestampString = "363598193.964577"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "19"
-         endingLineNumber = "19"
-         landmarkName = "-viewDidLoad"
+         startingLineNumber = "45"
+         endingLineNumber = "45"
+         landmarkName = "-buyButtonTap"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

@@ -21,7 +21,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor redColor];
     /* Buy Button */
@@ -37,6 +36,7 @@
     [self.sellButton setTitle: @"Sell Spot" forState: UIControlStateNormal];
     self.sellButton.frame = CGRectMake(60, 300, 200, 30);
     [self.view addSubview:self.sellButton];
+
 }
 
 - (void)buyButtonTap
@@ -46,6 +46,13 @@
     MapViewController *mapViewController = [[MapViewController alloc] init];
     [self presentModalViewController:mapViewController animated:YES];
 }
+
+- (void) viewDidAppear:(BOOL)animated
+{
+    /* Uncomment to skip to Map View */
+    [self buyButtonTap];
+}
+
 
 - (void)viewDidUnload
 {

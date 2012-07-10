@@ -12,5 +12,6 @@
 @interface MapViewController : UIViewController <MKMapViewDelegate> {
     
     MKMapView *mapView;
+    UILabel *instructionsLabel;
 }
 @end
