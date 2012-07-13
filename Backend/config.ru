@@ -1,3 +1,8 @@
-require './my_app'
+require 'rubygems'
+require 'bundler'
 
-run MyApp.new
+Bundler.require
+
+require './myapp'
+
+run MyApp

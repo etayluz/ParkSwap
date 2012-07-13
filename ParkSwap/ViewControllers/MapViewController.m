@@ -74,8 +74,11 @@
     
     NSString *url = @"http://wwoapp.herokuapp.com/api/v1/location";
     
+    //NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys: 
+    //                        latitude, @"latitude", longitude, @"longitude", nil];
+
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys: 
-                            latitude, @"latitude", longitude, @"longitude", nil];
+                            latitude, @"latitude", nil];
     
     [self sendToUrl:url withParams:params];
 }
