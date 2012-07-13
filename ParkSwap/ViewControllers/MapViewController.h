@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "ASIHTTPRequestDelegate.h"
+#import "ASIFormDataRequest.h"
 
 @interface MapViewController : UIViewController <MKMapViewDelegate> {
     
     MKMapView *mapView;
     UILabel *instructionsLabel;
 }
+@property (nonatomic, retain) ASIFormDataRequest *request;
 @end

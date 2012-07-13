@@ -14,6 +14,8 @@
 
 @implementation MapViewController
 
+@synthesize request;
+
 - (void)viewDidLoad
 {   
     [super viewDidLoad];
@@ -26,7 +28,7 @@
     [mapView setDelegate:self];
 #if TARGET_IPHONE_SIMULATOR
     /* Upper West Side */
-    MKCoordinateRegion region = {40.783, -73.9745};
+    MKCoordinateRegion region = {40.782, -73.974338};
     region.span.longitudeDelta = 0.01;
     region.span.latitudeDelta = 0.01;  
     [mapView setRegion:region animated:YES];
@@ -50,12 +52,45 @@
     CGPoint touchPoint = [gestureRecognizer locationInView:mapView];
     CLLocationCoordinate2D touchMapCoordinate = 
     [mapView convertPoint:touchPoint toCoordinateFromView:mapView];
-    
+
+
+    //NSLog(@"touchPoint=%@", touchPoint);
+    NSLog(@"touchMapCoordinate.latitude=%f", touchMapCoordinate.latitude);
+    NSLog(@"touchMapCoordinate.longitude=%f", touchMapCoordinate.longitude);
+
     MKPointAnnotation *pa = [[MKPointAnnotation alloc] init];
     pa.coordinate = touchMapCoordinate;
     pa.title = @"Hello";
     [mapView addAnnotation:pa];
     [pa release];
+    
+    [self send:touchMapCoordinate];
+}
+
+- (void) send:(CLLocationCoordinate2D) touchMapCoordinate
+{
+    NSString *latitude = [NSString stringWithFormat:@"%f", touchMapCoordinate.latitude];
+    NSString *longitude = [NSString stringWithFormat:@"%f", touchMapCoordinate.longitude];
+    
+    NSString *url = @"http://wwoapp.herokuapp.com/api/v1/location";
+    
+    NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys: 
+                            latitude, @"latitude", longitude, @"longitude", nil];
+    
+    [self sendToUrl:url withParams:params];
+}
+
+- (void) sendToUrl:(NSString *)url withParams:(NSDictionary *)params
+{
+    NSURL *u = [NSURL URLWithString:url];
+    self.request = [ASIFormDataRequest requestWithURL:u];
+    self.request.delegate = self;
+    
+    for (id key in params) {
+        [self.request setPostValue:[params objectForKey:key] forKey:key];
+    }
+    
+    [self.request startAsynchronous];
 }
 
 - (void)viewDidUnload
