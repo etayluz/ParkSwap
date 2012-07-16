@@ -1,2 +1,52 @@
 # Logfile created on Sun Jul 15 16:44:47 -0700 2012 by logger.rb/22285
 E, [2012-07-15 16:46:14#572] ERROR -- : some informative message goes here
+E, [2012-07-15 16:56:57#663] ERROR -- : some informative message goes here
+E, [2012-07-15 17:06:53#797] ERROR -- : Hello page
+E, [2012-07-15 17:07:08#797] ERROR -- : Hello page
+E, [2012-07-15 17:08:16#797] ERROR -- : Form page
+E, [2012-07-15 17:08:17#797] ERROR -- : Form page
+E, [2012-07-15 17:08:35#797] ERROR -- : Form page
+E, [2012-07-15 17:13:08#816] ERROR -- : some informative message goes here
+E, [2012-07-15 17:13:19#819] ERROR -- : some informative message goes here
+E, [2012-07-15 17:13:58#821] ERROR -- : Form page
+E, [2012-07-15 17:14:00#821] ERROR -- : Form page
+E, [2012-07-15 17:14:22#827] ERROR -- : some informative message goes here
+E, [2012-07-15 17:14:27#829] ERROR -- : some informative message goes here
+E, [2012-07-15 17:14:43#832] ERROR -- : some informative message goes here
+E, [2012-07-15 17:20:05#910] ERROR -- : Main page1
+E, [2012-07-15 17:20:16#915] ERROR -- : Main page21
+E, [2012-07-15 17:21:28#943] ERROR -- : Form page
+E, [2012-07-15 17:21:33#945] ERROR -- : Form page
+E, [2012-07-15 17:21:34#946] ERROR -- : Form page
+E, [2012-07-15 17:32:02#956] ERROR -- : Form page
+E, [2012-07-15 17:33:04#959] ERROR -- : Form page: ''
+E, [2012-07-15 17:41:34#986] ERROR -- : Form page: {"latitude"=>"40.790582"}
+E, [2012-07-15 17:42:30#992] ERROR -- : Form page: {"latitude"=>"40.787593"}
+E, [2012-07-15 17:42:33#994] ERROR -- : Form page: {"latitude"=>"40.783531"}
+E, [2012-07-15 17:43:00#996] ERROR -- : Form page: {"latitude"=>"40.784018"}
+E, [2012-07-15 17:43:00#997] ERROR -- : Form page: {"latitude"=>"40.783726"}
+E, [2012-07-15 17:43:05#999] ERROR -- : Form page: {"latitude"=>"40.782296"}
+E, [2012-07-15 17:47:48#1005] ERROR -- : Form page: {"latitude"=>"40.784278"}
+E, [2012-07-15 17:47:54#1007] ERROR -- : Form page: {"latitude"=>"40.786390"}
+E, [2012-07-15 17:47:56#1009] ERROR -- : Form page: {"latitude"=>"40.787658"}
+E, [2012-07-15 17:47:58#1011] ERROR -- : Form page: {"latitude"=>"40.790127"}
+E, [2012-07-15 17:48:08#1013] ERROR -- : Form page: {"latitude"=>"40.787528"}
+E, [2012-07-15 17:48:10#1015] ERROR -- : Form page: {"latitude"=>"40.790517"}
+E, [2012-07-15 17:48:17#1017] ERROR -- : Form page: {"latitude"=>"40.789380"}
+E, [2012-07-15 17:48:19#1019] ERROR -- : Form page: {"latitude"=>"40.789705"}
+E, [2012-07-15 17:56:56#1051] ERROR -- : Form page: {"latitude"=>"40.789152", "longitude"=>"-73.971548"}
+E, [2012-07-15 17:57:28#1056] ERROR -- : Form page: {"latitude"=>"40.786131", "longitude"=>"-73.975410"}
+E, [2012-07-15 17:57:29#1058] ERROR -- : Form page: {"latitude"=>"40.787463", "longitude"=>"-73.976526"}
+E, [2012-07-15 17:58:20#1063] ERROR -- : Form page: {"latitude"=>"40.787430", "longitude"=>"-73.969746"}
+E, [2012-07-15 17:58:26#1069] ERROR -- : Form page: {"latitude"=>"40.783369", "longitude"=>"-73.973351"}
+E, [2012-07-15 19:42:15#1091] ERROR -- : Form page: {"latitude"=>"40.786845", "longitude"=>"-73.972449"}
+E, [2012-07-15 19:42:20#1093] ERROR -- : Form page: {"latitude"=>"40.789575", "longitude"=>"-73.975668"}
+E, [2012-07-15 20:03:38#1128] ERROR -- : Form page: {"latitude"=>"40.785156", "longitude"=>"-73.969874"}
+E, [2012-07-15 20:03:41#1130] ERROR -- : Form page: {"latitude"=>"40.784798", "longitude"=>"-73.977084"}
+E, [2012-07-15 20:03:43#1131] ERROR -- : Form page: {"latitude"=>"40.784018", "longitude"=>"-73.978629"}
+E, [2012-07-15 20:04:42#1141] ERROR -- : Form page: {"latitude"=>"40.787105", "longitude"=>"-73.979058"}
+E, [2012-07-15 20:05:31#1152] ERROR -- : Form page: {"latitude"=>"40.786001", "longitude"=>"-73.973608"}
+E, [2012-07-15 20:05:32#1153] ERROR -- : Form page: {"latitude"=>"40.786163", "longitude"=>"-73.973565"}
+E, [2012-07-15 20:06:24#1157] ERROR -- : Form page: {"latitude"=>"40.785838", "longitude"=>"-73.971934"}
+E, [2012-07-15 20:06:27#1159] ERROR -- : Form page: {"latitude"=>"40.789542", "longitude"=>"-73.977771"}
+E, [2012-07-15 20:06:27#1160] ERROR -- : Form page: {"latitude"=>"40.788892", "longitude"=>"-73.977513"}

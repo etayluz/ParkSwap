@@ -4,16 +4,18 @@ class MyApp < Sinatra::Base
   register(Sinatra::Logger)
 
   get '/' do
-    logger.error("some informative message goes here")
+    logger.error("Main page21")
     'Hello world!'
   end
 
   post '/form' do  
-    "You said '#{params[:message]}'"  
+    #logger.error("Form page: #{params.inspect}")
+    puts "latitude: " + params[:latitude] + " longitude: " + params[:longitude]
   end
 
   get '/hello/:name' do  
     params[:name]  
+    logger.error("Hello page")
   end 
 end
 

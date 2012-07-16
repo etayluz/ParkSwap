@@ -72,13 +72,13 @@
     NSString *latitude = [NSString stringWithFormat:@"%f", touchMapCoordinate.latitude];
     NSString *longitude = [NSString stringWithFormat:@"%f", touchMapCoordinate.longitude];
     
-    NSString *url = @"http://wwoapp.herokuapp.com/api/v1/location";
+    NSString *url = @"http://localhost:9393/form";
     
-    //NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys: 
-    //                        latitude, @"latitude", longitude, @"longitude", nil];
-
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys: 
-                            latitude, @"latitude", nil];
+                            latitude, @"latitude", longitude, @"longitude", nil];
+
+    //NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys: 
+    //                        latitude, @"latitude", nil];
     
     [self sendToUrl:url withParams:params];
 }
