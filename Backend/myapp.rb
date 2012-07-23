@@ -1,6 +1,6 @@
 class MyApp < Sinatra::Base
 
-  set :root, '/Users/etayluz/ParkSwap/Backend'
+  set :root, '/Users/eluz/ParkSwap/Backend'
   register(Sinatra::Logger)
 
   get '/' do
@@ -9,7 +9,7 @@ class MyApp < Sinatra::Base
   end
 
   post '/form' do  
-    #logger.error("Form page: #{params.inspect}")
+    logger.error("Form page: #{params.inspect}")
     puts "latitude: " + params[:latitude] + " longitude: " + params[:longitude]
   end
 
