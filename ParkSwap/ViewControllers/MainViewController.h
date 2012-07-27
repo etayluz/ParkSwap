@@ -11,4 +11,6 @@
 @interface MainViewController : UIViewController
 @property (nonatomic, retain)  UIButton *buyButton;
 @property (nonatomic, retain)  UIButton *sellButton;
+@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UITabBarController *tabBarController;
 @end

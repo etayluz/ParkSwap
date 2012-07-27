@@ -19,6 +19,7 @@
 - (void)viewDidLoad
 {   
     [super viewDidLoad];
+        
     instructionsLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, 320, 20)];
     instructionsLabel.text = @"Tap on the map where your car is parked";
     [self.view addSubview:instructionsLabel];
@@ -74,7 +75,8 @@
     
     //NSString *url = @"http://localhost:9393/form";
     //NSString *url = @"http://localhost:9292/form";
-    NSString *url = @"http://localhost:3000/users/";
+    //NSString *url = @"http://localhost:3000/locations/";
+    NSString *url = @"http://lit-plains-9735.herokuapp.com/locations";
 
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys: 
                             latitude, @"latitude", longitude, @"longitude", nil];
