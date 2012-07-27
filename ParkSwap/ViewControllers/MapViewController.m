@@ -72,8 +72,10 @@
     NSString *latitude = [NSString stringWithFormat:@"%f", touchMapCoordinate.latitude];
     NSString *longitude = [NSString stringWithFormat:@"%f", touchMapCoordinate.longitude];
     
-    NSString *url = @"http://localhost:9393/form";
-    
+    //NSString *url = @"http://localhost:9393/form";
+    //NSString *url = @"http://localhost:9292/form";
+    NSString *url = @"http://localhost:3000/users/";
+
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys: 
                             latitude, @"latitude", longitude, @"longitude", nil];
 

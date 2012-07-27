@@ -1,0 +1,96 @@
+# Logfile created on Sun Jul 15 16:44:47 -0700 2012 by logger.rb/22285
+E, [2012-07-15 16:46:14#572] ERROR -- : some informative message goes here
+E, [2012-07-15 16:56:57#663] ERROR -- : some informative message goes here
+E, [2012-07-15 17:06:53#797] ERROR -- : Hello page
+E, [2012-07-15 17:07:08#797] ERROR -- : Hello page
+E, [2012-07-15 17:08:16#797] ERROR -- : Form page
+E, [2012-07-15 17:08:17#797] ERROR -- : Form page
+E, [2012-07-15 17:08:35#797] ERROR -- : Form page
+E, [2012-07-15 17:13:08#816] ERROR -- : some informative message goes here
+E, [2012-07-15 17:13:19#819] ERROR -- : some informative message goes here
+E, [2012-07-15 17:13:58#821] ERROR -- : Form page
+E, [2012-07-15 17:14:00#821] ERROR -- : Form page
+E, [2012-07-15 17:14:22#827] ERROR -- : some informative message goes here
+E, [2012-07-15 17:14:27#829] ERROR -- : some informative message goes here
+E, [2012-07-15 17:14:43#832] ERROR -- : some informative message goes here
+E, [2012-07-15 17:20:05#910] ERROR -- : Main page1
+E, [2012-07-15 17:20:16#915] ERROR -- : Main page21
+E, [2012-07-15 17:21:28#943] ERROR -- : Form page
+E, [2012-07-15 17:21:33#945] ERROR -- : Form page
+E, [2012-07-15 17:21:34#946] ERROR -- : Form page
+E, [2012-07-15 17:32:02#956] ERROR -- : Form page
+E, [2012-07-15 17:33:04#959] ERROR -- : Form page: ''
+E, [2012-07-15 17:41:34#986] ERROR -- : Form page: {"latitude"=>"40.790582"}
+E, [2012-07-15 17:42:30#992] ERROR -- : Form page: {"latitude"=>"40.787593"}
+E, [2012-07-15 17:42:33#994] ERROR -- : Form page: {"latitude"=>"40.783531"}
+E, [2012-07-15 17:43:00#996] ERROR -- : Form page: {"latitude"=>"40.784018"}
+E, [2012-07-15 17:43:00#997] ERROR -- : Form page: {"latitude"=>"40.783726"}
+E, [2012-07-15 17:43:05#999] ERROR -- : Form page: {"latitude"=>"40.782296"}
+E, [2012-07-15 17:47:48#1005] ERROR -- : Form page: {"latitude"=>"40.784278"}
+E, [2012-07-15 17:47:54#1007] ERROR -- : Form page: {"latitude"=>"40.786390"}
+E, [2012-07-15 17:47:56#1009] ERROR -- : Form page: {"latitude"=>"40.787658"}
+E, [2012-07-15 17:47:58#1011] ERROR -- : Form page: {"latitude"=>"40.790127"}
+E, [2012-07-15 17:48:08#1013] ERROR -- : Form page: {"latitude"=>"40.787528"}
+E, [2012-07-15 17:48:10#1015] ERROR -- : Form page: {"latitude"=>"40.790517"}
+E, [2012-07-15 17:48:17#1017] ERROR -- : Form page: {"latitude"=>"40.789380"}
+E, [2012-07-15 17:48:19#1019] ERROR -- : Form page: {"latitude"=>"40.789705"}
+E, [2012-07-15 17:56:56#1051] ERROR -- : Form page: {"latitude"=>"40.789152", "longitude"=>"-73.971548"}
+E, [2012-07-15 17:57:28#1056] ERROR -- : Form page: {"latitude"=>"40.786131", "longitude"=>"-73.975410"}
+E, [2012-07-15 17:57:29#1058] ERROR -- : Form page: {"latitude"=>"40.787463", "longitude"=>"-73.976526"}
+E, [2012-07-15 17:58:20#1063] ERROR -- : Form page: {"latitude"=>"40.787430", "longitude"=>"-73.969746"}
+E, [2012-07-15 17:58:26#1069] ERROR -- : Form page: {"latitude"=>"40.783369", "longitude"=>"-73.973351"}
+E, [2012-07-15 19:42:15#1091] ERROR -- : Form page: {"latitude"=>"40.786845", "longitude"=>"-73.972449"}
+E, [2012-07-15 19:42:20#1093] ERROR -- : Form page: {"latitude"=>"40.789575", "longitude"=>"-73.975668"}
+E, [2012-07-15 20:03:38#1128] ERROR -- : Form page: {"latitude"=>"40.785156", "longitude"=>"-73.969874"}
+E, [2012-07-15 20:03:41#1130] ERROR -- : Form page: {"latitude"=>"40.784798", "longitude"=>"-73.977084"}
+E, [2012-07-15 20:03:43#1131] ERROR -- : Form page: {"latitude"=>"40.784018", "longitude"=>"-73.978629"}
+E, [2012-07-15 20:04:42#1141] ERROR -- : Form page: {"latitude"=>"40.787105", "longitude"=>"-73.979058"}
+E, [2012-07-15 20:05:31#1152] ERROR -- : Form page: {"latitude"=>"40.786001", "longitude"=>"-73.973608"}
+E, [2012-07-15 20:05:32#1153] ERROR -- : Form page: {"latitude"=>"40.786163", "longitude"=>"-73.973565"}
+E, [2012-07-15 20:06:24#1157] ERROR -- : Form page: {"latitude"=>"40.785838", "longitude"=>"-73.971934"}
+E, [2012-07-15 20:06:27#1159] ERROR -- : Form page: {"latitude"=>"40.789542", "longitude"=>"-73.977771"}
+E, [2012-07-15 20:06:27#1160] ERROR -- : Form page: {"latitude"=>"40.788892", "longitude"=>"-73.977513"}
+E, [2012-07-22 17:54:31#2451] ERROR -- : Main page21
+E, [2012-07-22 23:46:52#4012] ERROR -- : Form page: {"longitude"=>"-73.970346", "latitude"=>"40.788892"}
+E, [2012-07-22 23:47:36#4055] ERROR -- : Form page: {"longitude"=>"-73.975239", "latitude"=>"40.786585"}
+E, [2012-07-22 23:47:38#4057] ERROR -- : Form page: {"longitude"=>"-73.974895", "latitude"=>"40.787950"}
+E, [2012-07-22 23:47:54#4059] ERROR -- : Form page: {"longitude"=>"-73.971806", "latitude"=>"40.784376"}
+E, [2012-07-22 23:47:55#4059] ERROR -- : Form page: {"longitude"=>"-73.971162", "latitude"=>"40.786618"}
+E, [2012-07-23 00:00:20#4115] ERROR -- : Form page: {"longitude"=>"-73.970132", "latitude"=>"40.783693"}
+E, [2012-07-23 00:00:22#4115] ERROR -- : Form page: {"longitude"=>"-73.974595", "latitude"=>"40.784018"}
+E, [2012-07-23 00:29:21#4182] ERROR -- : Form page: {"longitude"=>"-73.973179", "latitude"=>"40.788048"}
+E, [2012-07-23 00:31:58#4200] ERROR -- : Form page: {"longitude"=>"-73.969531", "latitude"=>"40.786748"}
+E, [2012-07-23 00:46:05#4216] ERROR -- : Form page: {"longitude"=>"-73.973050", "latitude"=>"40.787073"}
+E, [2012-07-23 00:47:20#4225] ERROR -- : Form page: {"longitude"=>"-73.972836", "latitude"=>"40.782264"}
+E, [2012-07-23 00:47:47#4227] ERROR -- : Form page: {"longitude"=>"-73.976569", "latitude"=>"40.785806"}
+E, [2012-07-23 00:48:18#4231] ERROR -- : Form page: {"longitude"=>"-73.977041", "latitude"=>"40.783239"}
+E, [2012-07-23 00:48:33#4234] ERROR -- : Form page: {"longitude"=>"-73.970604", "latitude"=>"40.782589"}
+E, [2012-07-23 00:48:35#4234] ERROR -- : Form page: {"longitude"=>"-73.976655", "latitude"=>"40.787073"}
+E, [2012-07-23 00:48:35#4234] ERROR -- : Form page: {"longitude"=>"-73.977685", "latitude"=>"40.788762"}
+E, [2012-07-23 00:48:39#4234] ERROR -- : Form page: {"longitude"=>"-73.977084", "latitude"=>"40.788275"}
+E, [2012-07-23 00:48:48#4237] ERROR -- : Form page: {"longitude"=>"-73.978629", "latitude"=>"40.785253"}
+E, [2012-07-23 00:49:14#4244] ERROR -- : Form page: {"longitude"=>"-73.971848", "latitude"=>"40.786098"}
+E, [2012-07-23 00:49:16#4244] ERROR -- : Form page: {"longitude"=>"-73.972492", "latitude"=>"40.789802"}
+E, [2012-07-23 00:49:25#4249] ERROR -- : Form page: {"longitude"=>"-73.975239", "latitude"=>"40.789737"}
+E, [2012-07-23 00:49:26#4249] ERROR -- : Form page: {"longitude"=>"-73.976011", "latitude"=>"40.789770"}
+E, [2012-07-23 00:49:27#4249] ERROR -- : Form page: {"longitude"=>"-73.974509", "latitude"=>"40.790225"}
+E, [2012-07-23 00:49:28#4249] ERROR -- : Form page: {"longitude"=>"-73.973286", "latitude"=>"40.789347"}
+E, [2012-07-23 00:49:30#4249] ERROR -- : Form page: {"longitude"=>"-73.973844", "latitude"=>"40.789087"}
+E, [2012-07-23 00:49:54#4254] ERROR -- : Form page: {"longitude"=>"-73.976870", "latitude"=>"40.792531"}
+E, [2012-07-23 00:49:56#4254] ERROR -- : Form page: {"longitude"=>"-73.971119", "latitude"=>"40.791167"}
+E, [2012-07-23 00:49:57#4254] ERROR -- : Form page: {"longitude"=>"-73.974380", "latitude"=>"40.792499"}
+E, [2012-07-23 00:49:58#4254] ERROR -- : Form page: {"longitude"=>"-73.977642", "latitude"=>"40.791362"}
+E, [2012-07-23 00:50:06#4260] ERROR -- : Form page: {"longitude"=>"-73.977814", "latitude"=>"40.787983"}
+E, [2012-07-23 00:50:07#4260] ERROR -- : Form page: {"longitude"=>"-73.979959", "latitude"=>"40.789315"}
+E, [2012-07-23 00:50:22#4265] ERROR -- : Form page: {"longitude"=>"-73.977556", "latitude"=>"40.789965"}
+E, [2012-07-23 00:52:37#4272] ERROR -- : Form page: {"longitude"=>"-73.969016", "latitude"=>"40.790160"}
+E, [2012-07-23 00:55:30#4272] ERROR -- : Form page: {"longitude"=>"-73.979273", "latitude"=>"40.784083"}
+E, [2012-07-23 00:55:40#4272] ERROR -- : Form page: {"longitude"=>"-73.972192", "latitude"=>"40.792012"}
+E, [2012-07-23 00:57:11#4284] ERROR -- : Form page: {"longitude"=>"-73.970304", "latitude"=>"40.788438"}
+E, [2012-07-23 00:58:03#4288] ERROR -- : Form page: {"longitude"=>"-73.977985", "latitude"=>"40.787300"}
+E, [2012-07-23 01:04:15#4297] ERROR -- : Form page: {"longitude"=>"-73.970733", "latitude"=>"40.790485"}
+E, [2012-07-23 01:05:36#4304] ERROR -- : Form page: {"longitude"=>"-73.972063", "latitude"=>"40.789022"}
+E, [2012-07-23 01:07:06#4311] ERROR -- : Form page: {"longitude"=>"-73.973694", "latitude"=>"40.785773"}
+E, [2012-07-23 01:14:55#4326] ERROR -- : Form page: {"longitude"=>"-73.972793", "latitude"=>"40.791459"}
+E, [2012-07-23 01:15:15#4332] ERROR -- : Form page: {"longitude"=>"-73.978887", "latitude"=>"40.793441"}
+E, [2012-07-23 01:21:01#4340] ERROR -- : Form page: {"longitude"=>"-73.973393", "latitude"=>"40.784896"}
