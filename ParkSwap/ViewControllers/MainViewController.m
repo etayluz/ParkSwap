@@ -26,21 +26,21 @@
     
     /* Buy Button */
     self.buyButton = [UIButton buttonWithType: UIButtonTypeRoundedRect];
-    [self.buyButton addTarget:self action:@selector(buyButtonTap) forControlEvents:UIControlEventTouchDown];
+    [self.buyButton addTarget:self action:@selector(buttonTap:) forControlEvents:UIControlEventTouchDown];
     [self.buyButton setTitle: @"Buy Spot" forState: UIControlStateNormal];
     self.buyButton.frame = CGRectMake(60, 100, 200, 30);
     [self.view addSubview:self.buyButton];
     
     /* Sell Button */
     self.sellButton = [UIButton buttonWithType: UIButtonTypeRoundedRect];
-    [self.sellButton addTarget:self action:@selector(buyButtonTap) forControlEvents:UIControlEventTouchDown];
+    [self.sellButton addTarget:self action:@selector(buttonTap:) forControlEvents:UIControlEventTouchDown];
     [self.sellButton setTitle: @"Sell Spot" forState: UIControlStateNormal];
     self.sellButton.frame = CGRectMake(60, 300, 200, 30);
     [self.view addSubview:self.sellButton];
 
 }
 
-- (void)buyButtonTap
+- (void)buttonTap: (id)sender;
 {
     [super viewDidUnload];
     
@@ -60,12 +60,12 @@
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:
                                              mapBuyViewController, mapSellViewController, nil];
 
-    //[[self.tabBarController.viewControllers objectAtIndex:0] setTitle:@"Buy Spot"];
-    //[[self.tabBarController.viewControllers objectAtIndex:1] setTitle:@"Sell Spot"];
     
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+    if (sender == self.sellButton)
+        [self.tabBarController setSelectedIndex:1];
 }
 
 - (void) viewDidAppear:(BOOL)animated
