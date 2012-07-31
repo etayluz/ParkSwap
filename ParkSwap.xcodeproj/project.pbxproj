@@ -19,6 +19,9 @@
 		612BB80E15C356D8006C78CA /* profile_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 612BB80D15C356D8006C78CA /* profile_icon.png */; };
 		612BB81015C358D7006C78CA /* trolley.png in Resources */ = {isa = PBXBuildFile; fileRef = 612BB80F15C358D7006C78CA /* trolley.png */; };
 		612BB81215C35C90006C78CA /* pricetag.png in Resources */ = {isa = PBXBuildFile; fileRef = 612BB81115C35C90006C78CA /* pricetag.png */; };
+		6142BE0815C78769007E0E23 /* BuyMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6142BE0715C78769007E0E23 /* BuyMapViewController.m */; };
+		6142BE0B15C78AAE007E0E23 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6142BE0A15C78AAE007E0E23 /* AccountViewController.m */; };
+		6142BE0D15C7942B007E0E23 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6142BE0C15C7942B007E0E23 /* Logo.png */; };
 		B475AFC415AFC41C00A32B43 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = B475AF8E15AFC41C00A32B43 /* ASIAuthenticationDialog.m */; };
 		B475AFC515AFC41C00A32B43 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = B475AF9115AFC41C00A32B43 /* ASIDataCompressor.m */; };
 		B475AFC615AFC41C00A32B43 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = B475AF9315AFC41C00A32B43 /* ASIDataDecompressor.m */; };
@@ -47,7 +50,7 @@
 		B47637E815AE9B410097BFFD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47637E715AE9B410097BFFD /* SystemConfiguration.framework */; };
 		B47637EA15AE9B4C0097BFFD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B47637E915AE9B4C0097BFFD /* MobileCoreServices.framework */; };
 		B47637EC15AE9B5F0097BFFD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B47637EB15AE9B5F0097BFFD /* libz.dylib */; };
-		B48AD78C15AC07BA008A8E9B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B48AD78B15AC07BA008A8E9B /* MapViewController.m */; };
+		B48AD78C15AC07BA008A8E9B /* SellMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B48AD78B15AC07BA008A8E9B /* SellMapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,11 @@
 		612BB80D15C356D8006C78CA /* profile_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile_icon.png; path = Images/profile_icon.png; sourceTree = "<group>"; };
 		612BB80F15C358D7006C78CA /* trolley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trolley.png; path = Images/trolley.png; sourceTree = "<group>"; };
 		612BB81115C35C90006C78CA /* pricetag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pricetag.png; path = Images/pricetag.png; sourceTree = "<group>"; };
+		6142BE0615C78769007E0E23 /* BuyMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuyMapViewController.h; path = ViewControllers/BuyMapViewController.h; sourceTree = "<group>"; };
+		6142BE0715C78769007E0E23 /* BuyMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuyMapViewController.m; path = ViewControllers/BuyMapViewController.m; sourceTree = "<group>"; };
+		6142BE0915C78AAE007E0E23 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountViewController.h; path = ViewControllers/AccountViewController.h; sourceTree = "<group>"; };
+		6142BE0A15C78AAE007E0E23 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountViewController.m; path = ViewControllers/AccountViewController.m; sourceTree = "<group>"; };
+		6142BE0C15C7942B007E0E23 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = Images/Logo.png; sourceTree = "<group>"; };
 		B475AF8D15AFC41C00A32B43 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		B475AF8E15AFC41C00A32B43 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		B475AF8F15AFC41C00A32B43 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -124,8 +132,8 @@
 		B47637E715AE9B410097BFFD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B47637E915AE9B4C0097BFFD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B47637EB15AE9B5F0097BFFD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		B48AD78A15AC07BA008A8E9B /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ViewControllers/MapViewController.h; sourceTree = "<group>"; };
-		B48AD78B15AC07BA008A8E9B /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ViewControllers/MapViewController.m; sourceTree = "<group>"; };
+		B48AD78A15AC07BA008A8E9B /* SellMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SellMapViewController.h; path = ViewControllers/SellMapViewController.h; sourceTree = "<group>"; };
+		B48AD78B15AC07BA008A8E9B /* SellMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SellMapViewController.m; path = ViewControllers/SellMapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +160,12 @@
 			children = (
 				372FB35A15A13A17004B9C89 /* MainViewController.h */,
 				372FB35B15A13A17004B9C89 /* MainViewController.m */,
-				B48AD78A15AC07BA008A8E9B /* MapViewController.h */,
-				B48AD78B15AC07BA008A8E9B /* MapViewController.m */,
+				6142BE0915C78AAE007E0E23 /* AccountViewController.h */,
+				6142BE0A15C78AAE007E0E23 /* AccountViewController.m */,
+				6142BE0615C78769007E0E23 /* BuyMapViewController.h */,
+				6142BE0715C78769007E0E23 /* BuyMapViewController.m */,
+				B48AD78A15AC07BA008A8E9B /* SellMapViewController.h */,
+				B48AD78B15AC07BA008A8E9B /* SellMapViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -218,6 +230,7 @@
 		612BB80A15C3506A006C78CA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6142BE0C15C7942B007E0E23 /* Logo.png */,
 				612BB81115C35C90006C78CA /* pricetag.png */,
 				612BB80F15C358D7006C78CA /* trolley.png */,
 				612BB80D15C356D8006C78CA /* profile_icon.png */,
@@ -397,6 +410,7 @@
 				612BB80E15C356D8006C78CA /* profile_icon.png in Resources */,
 				612BB81015C358D7006C78CA /* trolley.png in Resources */,
 				612BB81215C35C90006C78CA /* pricetag.png in Resources */,
+				6142BE0D15C7942B007E0E23 /* Logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +424,7 @@
 				3765F2C915A130C100E26785 /* main.m in Sources */,
 				3765F2CD15A130C100E26785 /* ParkSwapAppDelegate.m in Sources */,
 				372FB35C15A13A17004B9C89 /* MainViewController.m in Sources */,
-				B48AD78C15AC07BA008A8E9B /* MapViewController.m in Sources */,
+				B48AD78C15AC07BA008A8E9B /* SellMapViewController.m in Sources */,
 				B47637E315AE9A140097BFFD /* JSONKit.m in Sources */,
 				B475AFC415AFC41C00A32B43 /* ASIAuthenticationDialog.m in Sources */,
 				B475AFC515AFC41C00A32B43 /* ASIDataCompressor.m in Sources */,
@@ -434,6 +448,8 @@
 				B475AFD715AFC41C00A32B43 /* ASIS3Request.m in Sources */,
 				B475AFD815AFC41C00A32B43 /* ASIS3ServiceRequest.m in Sources */,
 				B475AFDA15AFC41C00A32B43 /* Reachability.m in Sources */,
+				6142BE0815C78769007E0E23 /* BuyMapViewController.m in Sources */,
+				6142BE0B15C78AAE007E0E23 /* AccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

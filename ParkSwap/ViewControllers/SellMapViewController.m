@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "MapViewController.h"
+#import "SellMapViewController.h"
 
-@interface MapViewController ()
+@interface SellMapViewController ()
 
 @end
 
-@implementation MapViewController
+@implementation SellMapViewController
 
 @synthesize request;
 

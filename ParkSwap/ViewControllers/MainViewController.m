@@ -7,7 +7,9 @@
 //
 
 #import "MainViewController.h"
-#import "MapViewController.h"
+#import "SellMapViewController.h"
+#import "BuyMapViewController.h"
+#import "AccountViewController.h"
 
 @interface MainViewController () 
 
@@ -21,21 +23,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    UIImageView* imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    imgView.image = [UIImage imageNamed:@"Logo.png"];
     
-    self.view.backgroundColor = [UIColor redColor];
+    [self.view addSubview:imgView];
+
+    //UIColor *background = [[[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Logo.png"]] autorelease];
+    //UIColor *background = [[[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Logo.png"]] autorelease];
+    //self.view.backgroundColor = background; 
     
     /* Buy Button */
     self.buyButton = [UIButton buttonWithType: UIButtonTypeRoundedRect];
     [self.buyButton addTarget:self action:@selector(buttonTap:) forControlEvents:UIControlEventTouchDown];
-    [self.buyButton setTitle: @"Buy Spot" forState: UIControlStateNormal];
-    self.buyButton.frame = CGRectMake(60, 100, 200, 30);
+    [self.buyButton setTitle: @"Find Spot" forState: UIControlStateNormal];
+    self.buyButton.frame = CGRectMake(60, 290, 200, 30);
     [self.view addSubview:self.buyButton];
     
     /* Sell Button */
     self.sellButton = [UIButton buttonWithType: UIButtonTypeRoundedRect];
     [self.sellButton addTarget:self action:@selector(buttonTap:) forControlEvents:UIControlEventTouchDown];
-    [self.sellButton setTitle: @"Sell Spot" forState: UIControlStateNormal];
-    self.sellButton.frame = CGRectMake(60, 300, 200, 30);
+    [self.sellButton setTitle: @"Offer Spot" forState: UIControlStateNormal];
+    self.sellButton.frame = CGRectMake(60, 370, 200, 30);
     [self.view addSubview:self.sellButton];
 
 }
@@ -44,26 +53,26 @@
 {
     [super viewDidUnload];
     
-    MapViewController *mapBuyViewController = [[MapViewController alloc] init];
+    BuyMapViewController *mapBuyViewController = [[BuyMapViewController alloc] init];
     UITabBarItem* buyTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Buy Spot" image: [UIImage imageNamed:@"trolley.png"] tag:0];
     mapBuyViewController.tabBarItem = buyTabBarItem;
     
-    MapViewController *mapSellViewController = [[MapViewController alloc] init];
+    SellMapViewController *mapSellViewController = [[SellMapViewController alloc] init];
     UITabBarItem* sellTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Sell Spot" image: [UIImage imageNamed:@"pricetag.png"]tag:1];
     mapSellViewController.tabBarItem = sellTabBarItem;
 
-    //[self presentModalViewController:mapViewController animated:YES];
+    AccountViewController *profileViewController = [[AccountViewController alloc] init];
+    UITabBarItem* profileTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Account" image: [UIImage imageNamed:@"profile_icon.png"] tag:0];
+    profileViewController.tabBarItem = profileTabBarItem;
+    
 
     self.tabBarController = [[[UITabBarController alloc] init] autorelease];
 
 
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:
-                                             mapBuyViewController, mapSellViewController, nil];
-
+                                             mapBuyViewController, mapSellViewController, profileViewController, nil];
     
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    self.window.rootViewController = self.tabBarController;
-    [self.window makeKeyAndVisible];
+    [self presentModalViewController:self.tabBarController animated:YES];
     if (sender == self.sellButton)
         [self.tabBarController setSelectedIndex:1];
 }
