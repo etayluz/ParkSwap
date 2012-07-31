@@ -6,10 +6,12 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
 #import "MainViewController.h"
 #import "SellMapViewController.h"
 #import "BuyMapViewController.h"
 #import "AccountViewController.h"
+
 
 @interface MainViewController () 
 
@@ -17,7 +19,7 @@
 
 @implementation MainViewController
 
-@synthesize buyButton, sellButton, window, tabBarController;
+@synthesize findSpotButton, offerSpotButton, window, tabBarController;
 
 
 - (void)viewDidLoad
@@ -29,24 +31,24 @@
     
     [self.view addSubview:imgView];
 
-    //UIColor *background = [[[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Logo.png"]] autorelease];
-    //UIColor *background = [[[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"Logo.png"]] autorelease];
-    //self.view.backgroundColor = background; 
-    
-    /* Buy Button */
-    self.buyButton = [UIButton buttonWithType: UIButtonTypeRoundedRect];
-    [self.buyButton addTarget:self action:@selector(buttonTap:) forControlEvents:UIControlEventTouchDown];
-    [self.buyButton setTitle: @"Find Spot" forState: UIControlStateNormal];
-    self.buyButton.frame = CGRectMake(60, 290, 200, 30);
-    [self.view addSubview:self.buyButton];
-    
-    /* Sell Button */
-    self.sellButton = [UIButton buttonWithType: UIButtonTypeRoundedRect];
-    [self.sellButton addTarget:self action:@selector(buttonTap:) forControlEvents:UIControlEventTouchDown];
-    [self.sellButton setTitle: @"Offer Spot" forState: UIControlStateNormal];
-    self.sellButton.frame = CGRectMake(60, 370, 200, 30);
-    [self.view addSubview:self.sellButton];
+    /* Find Spot Button */
+    UIImage *findSpotButtonImg = [UIImage imageNamed:@"FindSpot.png"];
+    self.findSpotButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.findSpotButton.frame = CGRectMake(60, 290, 200, 50);
+    [self.findSpotButton addTarget:self action:@selector(buttonTap:) forControlEvents:UIControlEventTouchDown];
+    [self.findSpotButton setTitle: @"" forState: UIControlStateNormal];
 
+    [self.findSpotButton setBackgroundImage:findSpotButtonImg forState:UIControlStateNormal];
+    [self.view addSubview:self.findSpotButton];  
+    
+    /* Offer Spot Button */
+    UIImage *offerSpotButtonImg = [UIImage imageNamed:@"OfferSpot.png"];
+    self.offerSpotButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.offerSpotButton.frame = CGRectMake(60, 370, 200, 50);
+    [self.offerSpotButton addTarget:self action:@selector(buttonTap:) forControlEvents:UIControlEventTouchDown];
+    [self.offerSpotButton setTitle: @"" forState: UIControlStateNormal];
+    [self.offerSpotButton setBackgroundImage:offerSpotButtonImg forState:UIControlStateNormal];
+    [self.view addSubview:self.offerSpotButton];  
 }
 
 - (void)buttonTap: (id)sender;
@@ -73,7 +75,7 @@
                                              mapBuyViewController, mapSellViewController, profileViewController, nil];
     
     [self presentModalViewController:self.tabBarController animated:YES];
-    if (sender == self.sellButton)
+    if (sender == self.offerSpotButton)
         [self.tabBarController setSelectedIndex:1];
 }
 

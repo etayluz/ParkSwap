@@ -22,6 +22,9 @@
 		6142BE0815C78769007E0E23 /* BuyMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6142BE0715C78769007E0E23 /* BuyMapViewController.m */; };
 		6142BE0B15C78AAE007E0E23 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6142BE0A15C78AAE007E0E23 /* AccountViewController.m */; };
 		6142BE0D15C7942B007E0E23 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6142BE0C15C7942B007E0E23 /* Logo.png */; };
+		6142BE0F15C7A324007E0E23 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6142BE0E15C7A324007E0E23 /* Button.png */; };
+		6142BE1115C7AB61007E0E23 /* FindSpot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6142BE1015C7AB61007E0E23 /* FindSpot.png */; };
+		617E3AD415C7AFAA00D6FDFE /* OfferSpot.png in Resources */ = {isa = PBXBuildFile; fileRef = 617E3AD315C7AFAA00D6FDFE /* OfferSpot.png */; };
 		B475AFC415AFC41C00A32B43 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = B475AF8E15AFC41C00A32B43 /* ASIAuthenticationDialog.m */; };
 		B475AFC515AFC41C00A32B43 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = B475AF9115AFC41C00A32B43 /* ASIDataCompressor.m */; };
 		B475AFC615AFC41C00A32B43 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = B475AF9315AFC41C00A32B43 /* ASIDataDecompressor.m */; };
@@ -76,6 +79,9 @@
 		6142BE0915C78AAE007E0E23 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountViewController.h; path = ViewControllers/AccountViewController.h; sourceTree = "<group>"; };
 		6142BE0A15C78AAE007E0E23 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountViewController.m; path = ViewControllers/AccountViewController.m; sourceTree = "<group>"; };
 		6142BE0C15C7942B007E0E23 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = Images/Logo.png; sourceTree = "<group>"; };
+		6142BE0E15C7A324007E0E23 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Button.png; path = Images/Button.png; sourceTree = "<group>"; };
+		6142BE1015C7AB61007E0E23 /* FindSpot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FindSpot.png; path = Images/FindSpot.png; sourceTree = "<group>"; };
+		617E3AD315C7AFAA00D6FDFE /* OfferSpot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OfferSpot.png; path = Images/OfferSpot.png; sourceTree = "<group>"; };
 		B475AF8D15AFC41C00A32B43 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		B475AF8E15AFC41C00A32B43 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		B475AF8F15AFC41C00A32B43 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -230,6 +236,9 @@
 		612BB80A15C3506A006C78CA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				617E3AD315C7AFAA00D6FDFE /* OfferSpot.png */,
+				6142BE1015C7AB61007E0E23 /* FindSpot.png */,
+				6142BE0E15C7A324007E0E23 /* Button.png */,
 				6142BE0C15C7942B007E0E23 /* Logo.png */,
 				612BB81115C35C90006C78CA /* pricetag.png */,
 				612BB80F15C358D7006C78CA /* trolley.png */,
@@ -411,6 +420,9 @@
 				612BB81015C358D7006C78CA /* trolley.png in Resources */,
 				612BB81215C35C90006C78CA /* pricetag.png in Resources */,
 				6142BE0D15C7942B007E0E23 /* Logo.png in Resources */,
+				6142BE0F15C7A324007E0E23 /* Button.png in Resources */,
+				6142BE1115C7AB61007E0E23 /* FindSpot.png in Resources */,
+				617E3AD415C7AFAA00D6FDFE /* OfferSpot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
