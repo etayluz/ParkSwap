@@ -19,6 +19,15 @@
 {
     [super viewDidLoad];
 
+    UILabel *myNavigationTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, self.view.frame.size.width, 33)];
+    myNavigationTitleLabel.textColor = [UIColor whiteColor];
+    myNavigationTitleLabel.backgroundColor = [UIColor clearColor];
+    myNavigationTitleLabel.text = @"Account";
+    myNavigationTitleLabel.textAlignment = UITextAlignmentCenter;
+    myNavigationTitleLabel.font = [UIFont fontWithName:@"Arial-BoldMT" size:17];
+    [self.navigationController.navigationBar addSubview:myNavigationTitleLabel];
+    [myNavigationTitleLabel release];
+    
     balanceLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 50, 100, 20)];
     balanceLabel.text = @"Balance = $3";
     [self.view addSubview:balanceLabel];

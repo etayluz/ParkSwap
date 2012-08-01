@@ -19,13 +19,21 @@
 - (void)viewDidLoad
 {   
     [super viewDidLoad];
-        
-    instructionsLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, 320, 20)];
-    instructionsLabel.text = @"Tap on the map where your car is parked";
-    [self.view addSubview:instructionsLabel];
+
+    UILabel *myNavigationTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, self.view.frame.size.width, 33)];
+    myNavigationTitleLabel.textColor = [UIColor whiteColor];
+    myNavigationTitleLabel.backgroundColor = [UIColor clearColor];
+    myNavigationTitleLabel.text = @"Tap on the map where you are parked";
+    myNavigationTitleLabel.textAlignment = UITextAlignmentCenter;
+    myNavigationTitleLabel.font = [UIFont fontWithName:@"Arial-BoldMT" size:17];
+    [self.navigationController.navigationBar addSubview:myNavigationTitleLabel];
+    [myNavigationTitleLabel release];
+    //instructionsLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, 320, 20)];
+    //instructionsLabel.text = @"Tap on the map where your car is parked";
+    //[self.view addSubview:instructionsLabel];
     
     mapView = [[MKMapView alloc] init]; 
-    mapView.frame = CGRectMake(0, 50, 320, 640);
+    mapView.frame = CGRectMake(0, 0, 320, 640);
     [mapView setDelegate:self];
 #if TARGET_IPHONE_SIMULATOR
     /* Upper West Side */

@@ -22,10 +22,20 @@
         
     instructionsLabel = [[UILabel alloc] initWithFrame:CGRectMake(5, 5, 320, 20)];
     instructionsLabel.text = @"Tap on a yellow dot to see more info";
-    [self.view addSubview:instructionsLabel];
+    //[self.view addSubview:instructionsLabel];
+    UILabel *myNavigationTitleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, self.view.frame.size.width, 33)];
+    myNavigationTitleLabel.textColor = [UIColor whiteColor];
+    myNavigationTitleLabel.backgroundColor = [UIColor clearColor];
+    myNavigationTitleLabel.text = @"Tap a yellow dot to see more details";
+    myNavigationTitleLabel.textAlignment = UITextAlignmentCenter;
+    myNavigationTitleLabel.font = [UIFont fontWithName:@"Arial-BoldMT" size:17];
+    [self.navigationController.navigationBar addSubview:myNavigationTitleLabel];
+    [myNavigationTitleLabel release];
+
+    //self.navigationItem.title = @"Tap on a yellow dot to see more info";
     
     mapView = [[MKMapView alloc] init]; 
-    mapView.frame = CGRectMake(0, 50, 320, 640);
+    mapView.frame = CGRectMake(0, 0, 320, 640);
     [mapView setDelegate:self];
 #if TARGET_IPHONE_SIMULATOR
     /* Upper West Side */

@@ -25,6 +25,7 @@
 		6142BE0F15C7A324007E0E23 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6142BE0E15C7A324007E0E23 /* Button.png */; };
 		6142BE1115C7AB61007E0E23 /* FindSpot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6142BE1015C7AB61007E0E23 /* FindSpot.png */; };
 		617E3AD415C7AFAA00D6FDFE /* OfferSpot.png in Resources */ = {isa = PBXBuildFile; fileRef = 617E3AD315C7AFAA00D6FDFE /* OfferSpot.png */; };
+		617E3ADF15C8ACCB00D6FDFE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 617E3ADE15C8ACCB00D6FDFE /* Icon.png */; };
 		B475AFC415AFC41C00A32B43 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = B475AF8E15AFC41C00A32B43 /* ASIAuthenticationDialog.m */; };
 		B475AFC515AFC41C00A32B43 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = B475AF9115AFC41C00A32B43 /* ASIDataCompressor.m */; };
 		B475AFC615AFC41C00A32B43 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = B475AF9315AFC41C00A32B43 /* ASIDataDecompressor.m */; };
@@ -82,6 +83,7 @@
 		6142BE0E15C7A324007E0E23 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Button.png; path = Images/Button.png; sourceTree = "<group>"; };
 		6142BE1015C7AB61007E0E23 /* FindSpot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FindSpot.png; path = Images/FindSpot.png; sourceTree = "<group>"; };
 		617E3AD315C7AFAA00D6FDFE /* OfferSpot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OfferSpot.png; path = Images/OfferSpot.png; sourceTree = "<group>"; };
+		617E3ADE15C8ACCB00D6FDFE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Images/Icon.png; sourceTree = "<group>"; };
 		B475AF8D15AFC41C00A32B43 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		B475AF8E15AFC41C00A32B43 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		B475AF8F15AFC41C00A32B43 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -211,7 +213,7 @@
 		3765F2C215A130C100E26785 /* ParkSwap */ = {
 			isa = PBXGroup;
 			children = (
-				612BB80A15C3506A006C78CA /* Images */,
+				612BB80A15C3506A006C78CA /* Resources */,
 				3765F2CB15A130C100E26785 /* ParkSwapAppDelegate.h */,
 				3765F2CC15A130C100E26785 /* ParkSwapAppDelegate.m */,
 				B475AF8B15AFC41C00A32B43 /* ASIHttp */,
@@ -233,9 +235,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		612BB80A15C3506A006C78CA /* Images */ = {
+		612BB80A15C3506A006C78CA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				617E3ADE15C8ACCB00D6FDFE /* Icon.png */,
 				617E3AD315C7AFAA00D6FDFE /* OfferSpot.png */,
 				6142BE1015C7AB61007E0E23 /* FindSpot.png */,
 				6142BE0E15C7A324007E0E23 /* Button.png */,
@@ -245,7 +248,7 @@
 				612BB80D15C356D8006C78CA /* profile_icon.png */,
 				612BB80B15C355A6006C78CA /* BuyIcon.png */,
 			);
-			name = Images;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		B475AF8B15AFC41C00A32B43 /* ASIHttp */ = {
@@ -423,6 +426,7 @@
 				6142BE0F15C7A324007E0E23 /* Button.png in Resources */,
 				6142BE1115C7AB61007E0E23 /* FindSpot.png in Resources */,
 				617E3AD415C7AFAA00D6FDFE /* OfferSpot.png in Resources */,
+				617E3ADF15C8ACCB00D6FDFE /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
